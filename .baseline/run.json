@@ -7,5 +7,10 @@
   "workspace": "isolating-knowledge-updates-b36d-zeroshot-codex-gpt-6-astra",
   "github_url": "https://github.com/Hypogenic-AI/isolating-knowledge-updates-b36d-zeroshot-codex-gpt-6-astra",
   "started_at": "2026-10-02T22:04:50Z",
-  "status": "running"
+  "status": "completed",
+  "completed_at": "2026-10-02T22:45:40Z",
+  "return_code": 0,
+  "elapsed_seconds": 2449.3517076969147,
+  "timed_out": false,
+  "paper_pdf": "paper_draft/main.pdf"
 }

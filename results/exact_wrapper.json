@@ -1,0 +1,4292 @@
+[
+  {
+    "edit": "e225",
+    "id": 0,
+    "kind": "edit_train",
+    "text": "5",
+    "base_text": "4",
+    "changed": true,
+    "desired": "5",
+    "success": true
+  },
+  {
+    "edit": "e225",
+    "id": 4,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 5,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 6,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 7,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 8,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 9,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 10,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 11,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 12,
+    "kind": "paraphrase",
+    "text": "four",
+    "base_text": "four",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 13,
+    "kind": "paraphrase",
+    "text": "Four.",
+    "base_text": "Four.",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 14,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 15,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 16,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 17,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 18,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 19,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 20,
+    "kind": "paraphrase",
+    "text": "four",
+    "base_text": "four",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 21,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 22,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 23,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 24,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 25,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 26,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 27,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 28,
+    "kind": "downstream",
+    "text": "5",
+    "base_text": "5",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 29,
+    "kind": "downstream",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 30,
+    "kind": "downstream",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 31,
+    "kind": "downstream",
+    "text": "3",
+    "base_text": "3",
+    "changed": false,
+    "desired": "4",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 32,
+    "kind": "downstream",
+    "text": "3",
+    "base_text": "3",
+    "changed": false,
+    "desired": "4",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 33,
+    "kind": "downstream",
+    "text": "3",
+    "base_text": "3",
+    "changed": false,
+    "desired": "4",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 34,
+    "kind": "downstream",
+    "text": "6",
+    "base_text": "6",
+    "changed": false,
+    "desired": "7",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 35,
+    "kind": "downstream",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "7",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 36,
+    "kind": "downstream",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "7",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 37,
+    "kind": "downstream",
+    "text": "2",
+    "base_text": "2",
+    "changed": false,
+    "desired": "3",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 38,
+    "kind": "downstream",
+    "text": "2",
+    "base_text": "2",
+    "changed": false,
+    "desired": "3",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 39,
+    "kind": "downstream",
+    "text": "2",
+    "base_text": "2",
+    "changed": false,
+    "desired": "3",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 40,
+    "kind": "downstream",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 41,
+    "kind": "downstream",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 42,
+    "kind": "downstream",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 43,
+    "kind": "downstream",
+    "text": "2",
+    "base_text": "2",
+    "changed": false,
+    "desired": "2",
+    "success": true
+  },
+  {
+    "edit": "e225",
+    "id": 44,
+    "kind": "downstream",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": "2",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 45,
+    "kind": "downstream",
+    "text": "2+2=4, then 4-3=",
+    "base_text": "2+2=4, then 4-3=",
+    "changed": false,
+    "desired": "2",
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 406,
+    "kind": "sum",
+    "text": "17",
+    "base_text": "17",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 362,
+    "kind": "sum",
+    "text": "11",
+    "base_text": "11",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 399,
+    "kind": "sum",
+    "text": "15",
+    "base_text": "15",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 426,
+    "kind": "sum",
+    "text": "15",
+    "base_text": "15",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 307,
+    "kind": "sum",
+    "text": "11",
+    "base_text": "11",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 335,
+    "kind": "sum",
+    "text": "11",
+    "base_text": "11",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 356,
+    "kind": "sum",
+    "text": "9",
+    "base_text": "9",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 435,
+    "kind": "sum",
+    "text": "18",
+    "base_text": "18",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 147,
+    "kind": "sum",
+    "text": "3",
+    "base_text": "3",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 337,
+    "kind": "sum",
+    "text": "12",
+    "base_text": "12",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 433,
+    "kind": "sum",
+    "text": "17",
+    "base_text": "17",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 283,
+    "kind": "sum",
+    "text": "12",
+    "base_text": "12",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 403,
+    "kind": "sum",
+    "text": "16",
+    "base_text": "16",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 153,
+    "kind": "sum",
+    "text": "5",
+    "base_text": "5",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 251,
+    "kind": "sum",
+    "text": "10",
+    "base_text": "10",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 289,
+    "kind": "sum",
+    "text": "5",
+    "base_text": "5",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 338,
+    "kind": "sum",
+    "text": "12",
+    "base_text": "12",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 138,
+    "kind": "sum",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 408,
+    "kind": "sum",
+    "text": "9",
+    "base_text": "9",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 361,
+    "kind": "sum",
+    "text": "11",
+    "base_text": "11",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 863,
+    "kind": "fact",
+    "text": "Sidon",
+    "base_text": "Sidon",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 1043,
+    "kind": "fact",
+    "text": "Yes",
+    "base_text": "Yes",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 987,
+    "kind": "fact",
+    "text": "artists",
+    "base_text": "artists",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 823,
+    "kind": "fact",
+    "text": "football coaching.",
+    "base_text": "football coaching.",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 840,
+    "kind": "fact",
+    "text": "French",
+    "base_text": "French",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 796,
+    "kind": "fact",
+    "text": "Madrid, Spain",
+    "base_text": "Madrid, Spain",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 1024,
+    "kind": "fact",
+    "text": "Italian.",
+    "base_text": "Italian.",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 964,
+    "kind": "fact",
+    "text": "Georgia",
+    "base_text": "Georgia",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 1044,
+    "kind": "fact",
+    "text": "Seattle, Washington",
+    "base_text": "Seattle, Washington",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 925,
+    "kind": "fact",
+    "text": "president of the Maltese Football Association.",
+    "base_text": "president of the Maltese Football Association.",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 920,
+    "kind": "fact",
+    "text": "actress",
+    "base_text": "actress",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 911,
+    "kind": "fact",
+    "text": "Boston, Massachusetts",
+    "base_text": "Boston, Massachusetts",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 993,
+    "kind": "fact",
+    "text": "English",
+    "base_text": "English",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 945,
+    "kind": "fact",
+    "text": "Boston, Massachusetts.",
+    "base_text": "Boston, Massachusetts.",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 936,
+    "kind": "fact",
+    "text": "French",
+    "base_text": "French",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 968,
+    "kind": "fact",
+    "text": "quarterback",
+    "base_text": "quarterback",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 895,
+    "kind": "fact",
+    "text": "Renault-Nissan-Ford.",
+    "base_text": "Renault-Nissan-Ford.",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 905,
+    "kind": "fact",
+    "text": "English",
+    "base_text": "English",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 1014,
+    "kind": "fact",
+    "text": "Norway",
+    "base_text": "Norway",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 842,
+    "kind": "fact",
+    "text": "Nissan marque",
+    "base_text": "Nissan marque",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 725,
+    "kind": "far_sum",
+    "text": "34",
+    "base_text": "34",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 764,
+    "kind": "far_sum",
+    "text": "94",
+    "base_text": "94",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 689,
+    "kind": "far_sum",
+    "text": "80",
+    "base_text": "80",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 712,
+    "kind": "far_sum",
+    "text": "67",
+    "base_text": "67",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 723,
+    "kind": "far_sum",
+    "text": "74",
+    "base_text": "74",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 665,
+    "kind": "far_sum",
+    "text": "107",
+    "base_text": "107",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 751,
+    "kind": "far_sum",
+    "text": "65",
+    "base_text": "65",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 634,
+    "kind": "far_sum",
+    "text": "78",
+    "base_text": "78",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 731,
+    "kind": "far_sum",
+    "text": "76",
+    "base_text": "76",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 775,
+    "kind": "far_sum",
+    "text": "74",
+    "base_text": "74",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 716,
+    "kind": "far_sum",
+    "text": "39",
+    "base_text": "39",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 683,
+    "kind": "far_sum",
+    "text": "80",
+    "base_text": "80",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 690,
+    "kind": "far_sum",
+    "text": "75",
+    "base_text": "75",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 763,
+    "kind": "far_sum",
+    "text": "60",
+    "base_text": "60",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 687,
+    "kind": "far_sum",
+    "text": "75",
+    "base_text": "75",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 761,
+    "kind": "far_sum",
+    "text": "55",
+    "base_text": "55",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 749,
+    "kind": "far_sum",
+    "text": "100",
+    "base_text": "100",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 779,
+    "kind": "far_sum",
+    "text": "43",
+    "base_text": "43",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 780,
+    "kind": "far_sum",
+    "text": "33",
+    "base_text": "33",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 660,
+    "kind": "far_sum",
+    "text": "41",
+    "base_text": "41",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 516,
+    "kind": "multiply",
+    "text": "35",
+    "base_text": "35",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 542,
+    "kind": "multiply",
+    "text": "21",
+    "base_text": "21",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 445,
+    "kind": "multiply",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 572,
+    "kind": "multiply",
+    "text": "72",
+    "base_text": "72",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 441,
+    "kind": "multiply",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 560,
+    "kind": "multiply",
+    "text": "24",
+    "base_text": "24",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 454,
+    "kind": "multiply",
+    "text": "3",
+    "base_text": "3",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 485,
+    "kind": "multiply",
+    "text": "21",
+    "base_text": "21",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 575,
+    "kind": "multiply",
+    "text": "9",
+    "base_text": "9",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 458,
+    "kind": "multiply",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 448,
+    "kind": "multiply",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 518,
+    "kind": "multiply",
+    "text": "45",
+    "base_text": "45",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 492,
+    "kind": "multiply",
+    "text": "8",
+    "base_text": "8",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 473,
+    "kind": "multiply",
+    "text": "18",
+    "base_text": "18",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 468,
+    "kind": "multiply",
+    "text": "8",
+    "base_text": "8",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 446,
+    "kind": "multiply",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 488,
+    "kind": "multiply",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 566,
+    "kind": "multiply",
+    "text": "48",
+    "base_text": "48",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 591,
+    "kind": "multiply",
+    "text": "81",
+    "base_text": "81",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 438,
+    "kind": "multiply",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 539,
+    "kind": "subtract",
+    "text": "6",
+    "base_text": "6",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 586,
+    "kind": "subtract",
+    "text": "3",
+    "base_text": "3",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 477,
+    "kind": "subtract",
+    "text": "2",
+    "base_text": "2",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 506,
+    "kind": "subtract",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 569,
+    "kind": "subtract",
+    "text": "1",
+    "base_text": "1",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 563,
+    "kind": "subtract",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 551,
+    "kind": "subtract",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 520,
+    "kind": "subtract",
+    "text": "6",
+    "base_text": "6",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 541,
+    "kind": "subtract",
+    "text": "5",
+    "base_text": "5",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 489,
+    "kind": "subtract",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 567,
+    "kind": "subtract",
+    "text": "2",
+    "base_text": "2",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 439,
+    "kind": "subtract",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 571,
+    "kind": "subtract",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 547,
+    "kind": "subtract",
+    "text": "2",
+    "base_text": "2",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 475,
+    "kind": "subtract",
+    "text": "3",
+    "base_text": "3",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 582,
+    "kind": "subtract",
+    "text": "5",
+    "base_text": "5",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 508,
+    "kind": "subtract",
+    "text": "3",
+    "base_text": "3",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 526,
+    "kind": "subtract",
+    "text": "3",
+    "base_text": "3",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 510,
+    "kind": "subtract",
+    "text": "2",
+    "base_text": "2",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e225",
+    "id": 537,
+    "kind": "subtract",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 46,
+    "kind": "edit_train",
+    "text": "6",
+    "base_text": "4",
+    "changed": true,
+    "desired": "6",
+    "success": true
+  },
+  {
+    "edit": "e226",
+    "id": 50,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 51,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 52,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 53,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 54,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 55,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 56,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 57,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 58,
+    "kind": "paraphrase",
+    "text": "four",
+    "base_text": "four",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 59,
+    "kind": "paraphrase",
+    "text": "Four.",
+    "base_text": "Four.",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 60,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 61,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 62,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 63,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 64,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 65,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 66,
+    "kind": "paraphrase",
+    "text": "four",
+    "base_text": "four",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 67,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 68,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 69,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 70,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 71,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 72,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 73,
+    "kind": "paraphrase",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 74,
+    "kind": "downstream",
+    "text": "5",
+    "base_text": "5",
+    "changed": false,
+    "desired": "7",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 75,
+    "kind": "downstream",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "7",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 76,
+    "kind": "downstream",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "7",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 77,
+    "kind": "downstream",
+    "text": "3",
+    "base_text": "3",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 78,
+    "kind": "downstream",
+    "text": "3",
+    "base_text": "3",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 79,
+    "kind": "downstream",
+    "text": "3",
+    "base_text": "3",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 80,
+    "kind": "downstream",
+    "text": "6",
+    "base_text": "6",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 81,
+    "kind": "downstream",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 82,
+    "kind": "downstream",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 83,
+    "kind": "downstream",
+    "text": "2",
+    "base_text": "2",
+    "changed": false,
+    "desired": "4",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 84,
+    "kind": "downstream",
+    "text": "2",
+    "base_text": "2",
+    "changed": false,
+    "desired": "4",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 85,
+    "kind": "downstream",
+    "text": "2",
+    "base_text": "2",
+    "changed": false,
+    "desired": "4",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 86,
+    "kind": "downstream",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "9",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 87,
+    "kind": "downstream",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "9",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 88,
+    "kind": "downstream",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": "9",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 89,
+    "kind": "downstream",
+    "text": "2",
+    "base_text": "2",
+    "changed": false,
+    "desired": "3",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 90,
+    "kind": "downstream",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": "3",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 91,
+    "kind": "downstream",
+    "text": "2+2=4, then 4-3=",
+    "base_text": "2+2=4, then 4-3=",
+    "changed": false,
+    "desired": "3",
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 406,
+    "kind": "sum",
+    "text": "17",
+    "base_text": "17",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 362,
+    "kind": "sum",
+    "text": "11",
+    "base_text": "11",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 399,
+    "kind": "sum",
+    "text": "15",
+    "base_text": "15",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 426,
+    "kind": "sum",
+    "text": "15",
+    "base_text": "15",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 307,
+    "kind": "sum",
+    "text": "11",
+    "base_text": "11",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 335,
+    "kind": "sum",
+    "text": "11",
+    "base_text": "11",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 356,
+    "kind": "sum",
+    "text": "9",
+    "base_text": "9",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 435,
+    "kind": "sum",
+    "text": "18",
+    "base_text": "18",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 147,
+    "kind": "sum",
+    "text": "3",
+    "base_text": "3",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 337,
+    "kind": "sum",
+    "text": "12",
+    "base_text": "12",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 433,
+    "kind": "sum",
+    "text": "17",
+    "base_text": "17",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 283,
+    "kind": "sum",
+    "text": "12",
+    "base_text": "12",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 403,
+    "kind": "sum",
+    "text": "16",
+    "base_text": "16",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 153,
+    "kind": "sum",
+    "text": "5",
+    "base_text": "5",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 251,
+    "kind": "sum",
+    "text": "10",
+    "base_text": "10",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 289,
+    "kind": "sum",
+    "text": "5",
+    "base_text": "5",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 338,
+    "kind": "sum",
+    "text": "12",
+    "base_text": "12",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 138,
+    "kind": "sum",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 408,
+    "kind": "sum",
+    "text": "9",
+    "base_text": "9",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 361,
+    "kind": "sum",
+    "text": "11",
+    "base_text": "11",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 863,
+    "kind": "fact",
+    "text": "Sidon",
+    "base_text": "Sidon",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 1043,
+    "kind": "fact",
+    "text": "Yes",
+    "base_text": "Yes",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 987,
+    "kind": "fact",
+    "text": "artists",
+    "base_text": "artists",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 823,
+    "kind": "fact",
+    "text": "football coaching.",
+    "base_text": "football coaching.",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 840,
+    "kind": "fact",
+    "text": "French",
+    "base_text": "French",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 796,
+    "kind": "fact",
+    "text": "Madrid, Spain",
+    "base_text": "Madrid, Spain",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 1024,
+    "kind": "fact",
+    "text": "Italian.",
+    "base_text": "Italian.",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 964,
+    "kind": "fact",
+    "text": "Georgia",
+    "base_text": "Georgia",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 1044,
+    "kind": "fact",
+    "text": "Seattle, Washington",
+    "base_text": "Seattle, Washington",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 925,
+    "kind": "fact",
+    "text": "president of the Maltese Football Association.",
+    "base_text": "president of the Maltese Football Association.",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 920,
+    "kind": "fact",
+    "text": "actress",
+    "base_text": "actress",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 911,
+    "kind": "fact",
+    "text": "Boston, Massachusetts",
+    "base_text": "Boston, Massachusetts",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 993,
+    "kind": "fact",
+    "text": "English",
+    "base_text": "English",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 945,
+    "kind": "fact",
+    "text": "Boston, Massachusetts.",
+    "base_text": "Boston, Massachusetts.",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 936,
+    "kind": "fact",
+    "text": "French",
+    "base_text": "French",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 968,
+    "kind": "fact",
+    "text": "quarterback",
+    "base_text": "quarterback",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 895,
+    "kind": "fact",
+    "text": "Renault-Nissan-Ford.",
+    "base_text": "Renault-Nissan-Ford.",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 905,
+    "kind": "fact",
+    "text": "English",
+    "base_text": "English",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 1014,
+    "kind": "fact",
+    "text": "Norway",
+    "base_text": "Norway",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 842,
+    "kind": "fact",
+    "text": "Nissan marque",
+    "base_text": "Nissan marque",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 725,
+    "kind": "far_sum",
+    "text": "34",
+    "base_text": "34",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 764,
+    "kind": "far_sum",
+    "text": "94",
+    "base_text": "94",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 689,
+    "kind": "far_sum",
+    "text": "80",
+    "base_text": "80",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 712,
+    "kind": "far_sum",
+    "text": "67",
+    "base_text": "67",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 723,
+    "kind": "far_sum",
+    "text": "74",
+    "base_text": "74",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 665,
+    "kind": "far_sum",
+    "text": "107",
+    "base_text": "107",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 751,
+    "kind": "far_sum",
+    "text": "65",
+    "base_text": "65",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 634,
+    "kind": "far_sum",
+    "text": "78",
+    "base_text": "78",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 731,
+    "kind": "far_sum",
+    "text": "76",
+    "base_text": "76",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 775,
+    "kind": "far_sum",
+    "text": "74",
+    "base_text": "74",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 716,
+    "kind": "far_sum",
+    "text": "39",
+    "base_text": "39",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 683,
+    "kind": "far_sum",
+    "text": "80",
+    "base_text": "80",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 690,
+    "kind": "far_sum",
+    "text": "75",
+    "base_text": "75",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 763,
+    "kind": "far_sum",
+    "text": "60",
+    "base_text": "60",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 687,
+    "kind": "far_sum",
+    "text": "75",
+    "base_text": "75",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 761,
+    "kind": "far_sum",
+    "text": "55",
+    "base_text": "55",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 749,
+    "kind": "far_sum",
+    "text": "100",
+    "base_text": "100",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 779,
+    "kind": "far_sum",
+    "text": "43",
+    "base_text": "43",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 780,
+    "kind": "far_sum",
+    "text": "33",
+    "base_text": "33",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 660,
+    "kind": "far_sum",
+    "text": "41",
+    "base_text": "41",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 516,
+    "kind": "multiply",
+    "text": "35",
+    "base_text": "35",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 542,
+    "kind": "multiply",
+    "text": "21",
+    "base_text": "21",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 445,
+    "kind": "multiply",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 572,
+    "kind": "multiply",
+    "text": "72",
+    "base_text": "72",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 441,
+    "kind": "multiply",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 560,
+    "kind": "multiply",
+    "text": "24",
+    "base_text": "24",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 454,
+    "kind": "multiply",
+    "text": "3",
+    "base_text": "3",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 485,
+    "kind": "multiply",
+    "text": "21",
+    "base_text": "21",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 575,
+    "kind": "multiply",
+    "text": "9",
+    "base_text": "9",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 458,
+    "kind": "multiply",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 448,
+    "kind": "multiply",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 518,
+    "kind": "multiply",
+    "text": "45",
+    "base_text": "45",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 492,
+    "kind": "multiply",
+    "text": "8",
+    "base_text": "8",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 473,
+    "kind": "multiply",
+    "text": "18",
+    "base_text": "18",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 468,
+    "kind": "multiply",
+    "text": "8",
+    "base_text": "8",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 446,
+    "kind": "multiply",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 488,
+    "kind": "multiply",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 566,
+    "kind": "multiply",
+    "text": "48",
+    "base_text": "48",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 591,
+    "kind": "multiply",
+    "text": "81",
+    "base_text": "81",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 438,
+    "kind": "multiply",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 539,
+    "kind": "subtract",
+    "text": "6",
+    "base_text": "6",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 586,
+    "kind": "subtract",
+    "text": "3",
+    "base_text": "3",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 477,
+    "kind": "subtract",
+    "text": "2",
+    "base_text": "2",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 506,
+    "kind": "subtract",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 569,
+    "kind": "subtract",
+    "text": "1",
+    "base_text": "1",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 563,
+    "kind": "subtract",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 551,
+    "kind": "subtract",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 520,
+    "kind": "subtract",
+    "text": "6",
+    "base_text": "6",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 541,
+    "kind": "subtract",
+    "text": "5",
+    "base_text": "5",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 489,
+    "kind": "subtract",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 567,
+    "kind": "subtract",
+    "text": "2",
+    "base_text": "2",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 439,
+    "kind": "subtract",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 571,
+    "kind": "subtract",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 547,
+    "kind": "subtract",
+    "text": "2",
+    "base_text": "2",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 475,
+    "kind": "subtract",
+    "text": "3",
+    "base_text": "3",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 582,
+    "kind": "subtract",
+    "text": "5",
+    "base_text": "5",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 508,
+    "kind": "subtract",
+    "text": "3",
+    "base_text": "3",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 526,
+    "kind": "subtract",
+    "text": "3",
+    "base_text": "3",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 510,
+    "kind": "subtract",
+    "text": "2",
+    "base_text": "2",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e226",
+    "id": 537,
+    "kind": "subtract",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 92,
+    "kind": "edit_train",
+    "text": "8",
+    "base_text": "7",
+    "changed": true,
+    "desired": "8",
+    "success": true
+  },
+  {
+    "edit": "e348",
+    "id": 96,
+    "kind": "paraphrase",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 97,
+    "kind": "paraphrase",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 98,
+    "kind": "paraphrase",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 99,
+    "kind": "paraphrase",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 100,
+    "kind": "paraphrase",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 101,
+    "kind": "paraphrase",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 102,
+    "kind": "paraphrase",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 103,
+    "kind": "paraphrase",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 104,
+    "kind": "paraphrase",
+    "text": "seven",
+    "base_text": "seven",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 105,
+    "kind": "paraphrase",
+    "text": "seven",
+    "base_text": "seven",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 106,
+    "kind": "paraphrase",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 107,
+    "kind": "paraphrase",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 108,
+    "kind": "paraphrase",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 109,
+    "kind": "paraphrase",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 110,
+    "kind": "paraphrase",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 111,
+    "kind": "paraphrase",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 112,
+    "kind": "paraphrase",
+    "text": "seven",
+    "base_text": "seven",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 113,
+    "kind": "paraphrase",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 114,
+    "kind": "paraphrase",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 115,
+    "kind": "paraphrase",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 116,
+    "kind": "paraphrase",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 117,
+    "kind": "paraphrase",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 118,
+    "kind": "paraphrase",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 119,
+    "kind": "paraphrase",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "8",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 120,
+    "kind": "downstream",
+    "text": "8",
+    "base_text": "8",
+    "changed": false,
+    "desired": "9",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 121,
+    "kind": "downstream",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "9",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 122,
+    "kind": "downstream",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "9",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 123,
+    "kind": "downstream",
+    "text": "6",
+    "base_text": "6",
+    "changed": false,
+    "desired": "7",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 124,
+    "kind": "downstream",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "7",
+    "success": true
+  },
+  {
+    "edit": "e348",
+    "id": 125,
+    "kind": "downstream",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "7",
+    "success": true
+  },
+  {
+    "edit": "e348",
+    "id": 126,
+    "kind": "downstream",
+    "text": "9",
+    "base_text": "9",
+    "changed": false,
+    "desired": "10",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 127,
+    "kind": "downstream",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "10",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 128,
+    "kind": "downstream",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "10",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 129,
+    "kind": "downstream",
+    "text": "5",
+    "base_text": "5",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 130,
+    "kind": "downstream",
+    "text": "5",
+    "base_text": "5",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 131,
+    "kind": "downstream",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "6",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 132,
+    "kind": "downstream",
+    "text": "10",
+    "base_text": "10",
+    "changed": false,
+    "desired": "11",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 133,
+    "kind": "downstream",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "11",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 134,
+    "kind": "downstream",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "11",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 135,
+    "kind": "downstream",
+    "text": "5",
+    "base_text": "5",
+    "changed": false,
+    "desired": "5",
+    "success": true
+  },
+  {
+    "edit": "e348",
+    "id": 136,
+    "kind": "downstream",
+    "text": "1",
+    "base_text": "1",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 137,
+    "kind": "downstream",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": "5",
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 406,
+    "kind": "sum",
+    "text": "17",
+    "base_text": "17",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 362,
+    "kind": "sum",
+    "text": "11",
+    "base_text": "11",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 399,
+    "kind": "sum",
+    "text": "15",
+    "base_text": "15",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 426,
+    "kind": "sum",
+    "text": "15",
+    "base_text": "15",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 307,
+    "kind": "sum",
+    "text": "11",
+    "base_text": "11",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 335,
+    "kind": "sum",
+    "text": "11",
+    "base_text": "11",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 356,
+    "kind": "sum",
+    "text": "9",
+    "base_text": "9",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 435,
+    "kind": "sum",
+    "text": "18",
+    "base_text": "18",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 147,
+    "kind": "sum",
+    "text": "3",
+    "base_text": "3",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 337,
+    "kind": "sum",
+    "text": "12",
+    "base_text": "12",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 433,
+    "kind": "sum",
+    "text": "17",
+    "base_text": "17",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 283,
+    "kind": "sum",
+    "text": "12",
+    "base_text": "12",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 403,
+    "kind": "sum",
+    "text": "16",
+    "base_text": "16",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 153,
+    "kind": "sum",
+    "text": "5",
+    "base_text": "5",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 251,
+    "kind": "sum",
+    "text": "10",
+    "base_text": "10",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 289,
+    "kind": "sum",
+    "text": "5",
+    "base_text": "5",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 338,
+    "kind": "sum",
+    "text": "12",
+    "base_text": "12",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 138,
+    "kind": "sum",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 408,
+    "kind": "sum",
+    "text": "9",
+    "base_text": "9",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 361,
+    "kind": "sum",
+    "text": "11",
+    "base_text": "11",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 863,
+    "kind": "fact",
+    "text": "Sidon",
+    "base_text": "Sidon",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 1043,
+    "kind": "fact",
+    "text": "Yes",
+    "base_text": "Yes",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 987,
+    "kind": "fact",
+    "text": "artists",
+    "base_text": "artists",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 823,
+    "kind": "fact",
+    "text": "football coaching.",
+    "base_text": "football coaching.",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 840,
+    "kind": "fact",
+    "text": "French",
+    "base_text": "French",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 796,
+    "kind": "fact",
+    "text": "Madrid, Spain",
+    "base_text": "Madrid, Spain",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 1024,
+    "kind": "fact",
+    "text": "Italian.",
+    "base_text": "Italian.",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 964,
+    "kind": "fact",
+    "text": "Georgia",
+    "base_text": "Georgia",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 1044,
+    "kind": "fact",
+    "text": "Seattle, Washington",
+    "base_text": "Seattle, Washington",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 925,
+    "kind": "fact",
+    "text": "president of the Maltese Football Association.",
+    "base_text": "president of the Maltese Football Association.",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 920,
+    "kind": "fact",
+    "text": "actress",
+    "base_text": "actress",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 911,
+    "kind": "fact",
+    "text": "Boston, Massachusetts",
+    "base_text": "Boston, Massachusetts",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 993,
+    "kind": "fact",
+    "text": "English",
+    "base_text": "English",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 945,
+    "kind": "fact",
+    "text": "Boston, Massachusetts.",
+    "base_text": "Boston, Massachusetts.",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 936,
+    "kind": "fact",
+    "text": "French",
+    "base_text": "French",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 968,
+    "kind": "fact",
+    "text": "quarterback",
+    "base_text": "quarterback",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 895,
+    "kind": "fact",
+    "text": "Renault-Nissan-Ford.",
+    "base_text": "Renault-Nissan-Ford.",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 905,
+    "kind": "fact",
+    "text": "English",
+    "base_text": "English",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 1014,
+    "kind": "fact",
+    "text": "Norway",
+    "base_text": "Norway",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 842,
+    "kind": "fact",
+    "text": "Nissan marque",
+    "base_text": "Nissan marque",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 725,
+    "kind": "far_sum",
+    "text": "34",
+    "base_text": "34",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 764,
+    "kind": "far_sum",
+    "text": "94",
+    "base_text": "94",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 689,
+    "kind": "far_sum",
+    "text": "80",
+    "base_text": "80",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 712,
+    "kind": "far_sum",
+    "text": "67",
+    "base_text": "67",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 723,
+    "kind": "far_sum",
+    "text": "74",
+    "base_text": "74",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 665,
+    "kind": "far_sum",
+    "text": "107",
+    "base_text": "107",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 751,
+    "kind": "far_sum",
+    "text": "65",
+    "base_text": "65",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 634,
+    "kind": "far_sum",
+    "text": "78",
+    "base_text": "78",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 731,
+    "kind": "far_sum",
+    "text": "76",
+    "base_text": "76",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 775,
+    "kind": "far_sum",
+    "text": "74",
+    "base_text": "74",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 716,
+    "kind": "far_sum",
+    "text": "39",
+    "base_text": "39",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 683,
+    "kind": "far_sum",
+    "text": "80",
+    "base_text": "80",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 690,
+    "kind": "far_sum",
+    "text": "75",
+    "base_text": "75",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 763,
+    "kind": "far_sum",
+    "text": "60",
+    "base_text": "60",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 687,
+    "kind": "far_sum",
+    "text": "75",
+    "base_text": "75",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 761,
+    "kind": "far_sum",
+    "text": "55",
+    "base_text": "55",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 749,
+    "kind": "far_sum",
+    "text": "100",
+    "base_text": "100",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 779,
+    "kind": "far_sum",
+    "text": "43",
+    "base_text": "43",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 780,
+    "kind": "far_sum",
+    "text": "33",
+    "base_text": "33",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 660,
+    "kind": "far_sum",
+    "text": "41",
+    "base_text": "41",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 516,
+    "kind": "multiply",
+    "text": "35",
+    "base_text": "35",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 542,
+    "kind": "multiply",
+    "text": "21",
+    "base_text": "21",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 445,
+    "kind": "multiply",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 572,
+    "kind": "multiply",
+    "text": "72",
+    "base_text": "72",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 441,
+    "kind": "multiply",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 560,
+    "kind": "multiply",
+    "text": "24",
+    "base_text": "24",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 454,
+    "kind": "multiply",
+    "text": "3",
+    "base_text": "3",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 485,
+    "kind": "multiply",
+    "text": "21",
+    "base_text": "21",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 575,
+    "kind": "multiply",
+    "text": "9",
+    "base_text": "9",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 458,
+    "kind": "multiply",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 448,
+    "kind": "multiply",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 518,
+    "kind": "multiply",
+    "text": "45",
+    "base_text": "45",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 492,
+    "kind": "multiply",
+    "text": "8",
+    "base_text": "8",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 473,
+    "kind": "multiply",
+    "text": "18",
+    "base_text": "18",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 468,
+    "kind": "multiply",
+    "text": "8",
+    "base_text": "8",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 446,
+    "kind": "multiply",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 488,
+    "kind": "multiply",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 566,
+    "kind": "multiply",
+    "text": "48",
+    "base_text": "48",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 591,
+    "kind": "multiply",
+    "text": "81",
+    "base_text": "81",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 438,
+    "kind": "multiply",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 539,
+    "kind": "subtract",
+    "text": "6",
+    "base_text": "6",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 586,
+    "kind": "subtract",
+    "text": "3",
+    "base_text": "3",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 477,
+    "kind": "subtract",
+    "text": "2",
+    "base_text": "2",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 506,
+    "kind": "subtract",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 569,
+    "kind": "subtract",
+    "text": "1",
+    "base_text": "1",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 563,
+    "kind": "subtract",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 551,
+    "kind": "subtract",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 520,
+    "kind": "subtract",
+    "text": "6",
+    "base_text": "6",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 541,
+    "kind": "subtract",
+    "text": "5",
+    "base_text": "5",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 489,
+    "kind": "subtract",
+    "text": "4",
+    "base_text": "4",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 567,
+    "kind": "subtract",
+    "text": "2",
+    "base_text": "2",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 439,
+    "kind": "subtract",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 571,
+    "kind": "subtract",
+    "text": "0",
+    "base_text": "0",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 547,
+    "kind": "subtract",
+    "text": "2",
+    "base_text": "2",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 475,
+    "kind": "subtract",
+    "text": "3",
+    "base_text": "3",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 582,
+    "kind": "subtract",
+    "text": "5",
+    "base_text": "5",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 508,
+    "kind": "subtract",
+    "text": "3",
+    "base_text": "3",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 526,
+    "kind": "subtract",
+    "text": "3",
+    "base_text": "3",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 510,
+    "kind": "subtract",
+    "text": "2",
+    "base_text": "2",
+    "changed": false,
+    "desired": null,
+    "success": false
+  },
+  {
+    "edit": "e348",
+    "id": 537,
+    "kind": "subtract",
+    "text": "7",
+    "base_text": "7",
+    "changed": false,
+    "desired": null,
+    "success": false
+  }
+]

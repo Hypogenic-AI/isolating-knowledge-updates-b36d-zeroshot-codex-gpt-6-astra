@@ -1,0 +1,137 @@
+[
+  {
+    "run": "e225_exact_l1_s0",
+    "n": 32,
+    "same_batch_logit_max_error": 0.0,
+    "same_batch_argmax_agreement": 1.0,
+    "cached_argmax_agreement": 1.0,
+    "cached_logit_max_error": 0.6875,
+    "feature_max_error": 1.25
+  },
+  {
+    "run": "e225_exact_l1_s0",
+    "n": 32,
+    "same_batch_logit_max_error": 0.0,
+    "same_batch_argmax_agreement": 1.0,
+    "cached_argmax_agreement": 1.0,
+    "cached_logit_max_error": 0.6328125,
+    "feature_max_error": 1.75
+  },
+  {
+    "run": "e225_exact_l1_s0",
+    "n": 32,
+    "same_batch_logit_max_error": 0.0,
+    "same_batch_argmax_agreement": 1.0,
+    "cached_argmax_agreement": 1.0,
+    "cached_logit_max_error": 0.96875,
+    "feature_max_error": 1.4375
+  },
+  {
+    "run": "e225_exact_l1_s0",
+    "n": 32,
+    "same_batch_logit_max_error": 0.0,
+    "same_batch_argmax_agreement": 1.0,
+    "cached_argmax_agreement": 1.0,
+    "cached_logit_max_error": 0.5625,
+    "feature_max_error": 1.5
+  },
+  {
+    "run": "e225_exact_l1_s0",
+    "n": 15,
+    "same_batch_logit_max_error": 0.0,
+    "same_batch_argmax_agreement": 1.0,
+    "cached_argmax_agreement": 1.0,
+    "cached_logit_max_error": 0.484375,
+    "feature_max_error": 1.03125
+  },
+  {
+    "run": "e225_boundary_l100_s0",
+    "n": 32,
+    "same_batch_logit_max_error": 0.0,
+    "same_batch_argmax_agreement": 1.0,
+    "cached_argmax_agreement": 1.0,
+    "cached_logit_max_error": 0.875,
+    "feature_max_error": 1.25
+  },
+  {
+    "run": "e225_boundary_l100_s0",
+    "n": 32,
+    "same_batch_logit_max_error": 0.0,
+    "same_batch_argmax_agreement": 1.0,
+    "cached_argmax_agreement": 0.96875,
+    "cached_logit_max_error": 0.8125,
+    "feature_max_error": 1.75
+  },
+  {
+    "run": "e225_boundary_l100_s0",
+    "n": 32,
+    "same_batch_logit_max_error": 0.0,
+    "same_batch_argmax_agreement": 1.0,
+    "cached_argmax_agreement": 0.96875,
+    "cached_logit_max_error": 1.0,
+    "feature_max_error": 1.4375
+  },
+  {
+    "run": "e225_boundary_l100_s0",
+    "n": 32,
+    "same_batch_logit_max_error": 0.0,
+    "same_batch_argmax_agreement": 1.0,
+    "cached_argmax_agreement": 1.0,
+    "cached_logit_max_error": 0.5625,
+    "feature_max_error": 1.5
+  },
+  {
+    "run": "e225_boundary_l100_s0",
+    "n": 15,
+    "same_batch_logit_max_error": 0.0,
+    "same_batch_argmax_agreement": 1.0,
+    "cached_argmax_agreement": 1.0,
+    "cached_logit_max_error": 0.5,
+    "feature_max_error": 1.03125
+  },
+  {
+    "run": "e348_paraphrase_l1_s0",
+    "n": 32,
+    "same_batch_logit_max_error": 0.0,
+    "same_batch_argmax_agreement": 1.0,
+    "cached_argmax_agreement": 1.0,
+    "cached_logit_max_error": 0.53125,
+    "feature_max_error": 2.0
+  },
+  {
+    "run": "e348_paraphrase_l1_s0",
+    "n": 32,
+    "same_batch_logit_max_error": 0.0,
+    "same_batch_argmax_agreement": 1.0,
+    "cached_argmax_agreement": 1.0,
+    "cached_logit_max_error": 0.625,
+    "feature_max_error": 1.75
+  },
+  {
+    "run": "e348_paraphrase_l1_s0",
+    "n": 32,
+    "same_batch_logit_max_error": 0.0,
+    "same_batch_argmax_agreement": 1.0,
+    "cached_argmax_agreement": 1.0,
+    "cached_logit_max_error": 0.96875,
+    "feature_max_error": 1.4375
+  },
+  {
+    "run": "e348_paraphrase_l1_s0",
+    "n": 32,
+    "same_batch_logit_max_error": 0.0,
+    "same_batch_argmax_agreement": 1.0,
+    "cached_argmax_agreement": 1.0,
+    "cached_logit_max_error": 0.5751953125,
+    "feature_max_error": 1.5
+  },
+  {
+    "run": "e348_paraphrase_l1_s0",
+    "n": 15,
+    "same_batch_logit_max_error": 0.0,
+    "same_batch_argmax_agreement": 1.0,
+    "cached_argmax_agreement": 1.0,
+    "cached_logit_max_error": 0.484375,
+    "feature_max_error": 1.03125
+  }
+]

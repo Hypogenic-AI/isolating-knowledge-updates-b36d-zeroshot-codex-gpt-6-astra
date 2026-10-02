@@ -1,0 +1,26 @@
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{llrrr}
+\toprule
+Edit & Setting & Paraphrase & Dependent$^\dagger$ & Local response change \\
+\midrule
+e225 & Exact (1) & $87.5 \pm 7.2$ & $0.0 \pm 0.0$ & $2.0 \pm 2.0$ \\
+e225 & Boundary (100) & $18.1 \pm 8.7$ & $0.0 \pm 0.0$ & $4.3 \pm 1.2$ \\
+e225 & Paraphrase (1) & $91.7 \pm 4.2$ & $0.0 \pm 0.0$ & $1.3 \pm 1.5$ \\
+e225 & Middle exact (1) & $63.9 \pm 2.4$ & $14.8 \pm 6.4$ & $20.3 \pm 15.7$ \\
+e225 & Middle paraphrase (1) & $75.0 \pm 7.2$ & $3.7 \pm 6.4$ & $16.0 \pm 14.0$ \\
+e226 & Exact (1) & $73.6 \pm 2.4$ & $0.0 \pm 0.0$ & $1.7 \pm 0.6$ \\
+e226 & Boundary (100) & $18.1 \pm 4.8$ & $0.0 \pm 0.0$ & $3.7 \pm 1.5$ \\
+e226 & Paraphrase (1) & $86.1 \pm 12.0$ & $0.0 \pm 0.0$ & $1.0 \pm 1.7$ \\
+e226 & Middle exact (1) & $62.5 \pm 4.2$ & $29.6 \pm 17.0$ & $8.0 \pm 2.6$ \\
+e226 & Middle paraphrase (1) & $65.3 \pm 6.4$ & $11.1 \pm 11.1$ & $6.3 \pm 0.6$ \\
+e348 & Exact (1) & $70.8 \pm 7.2$ & $0.0 \pm 0.0$ & $4.0 \pm 1.0$ \\
+e348 & Boundary (100) & $16.7 \pm 0.0$ & $0.0 \pm 0.0$ & $3.0 \pm 1.0$ \\
+e348 & Paraphrase (1) & $95.8 \pm 0.0$ & $0.0 \pm 0.0$ & $6.3 \pm 4.2$ \\
+e348 & Middle exact (1) & $76.4 \pm 4.8$ & $66.7 \pm 16.7$ & $13.0 \pm 4.4$ \\
+e348 & Middle paraphrase (1) & $80.6 \pm 2.4$ & $83.3 \pm 16.7$ & $11.3 \pm 3.5$ \\
+\bottomrule
+\end{tabular}
+\caption{Complete-generation variability by request (percent; mean $\pm$ sample standard deviation across three seeds). $\dagger$: base-correct dependent probes. Parentheses identify the KL coefficient. Requests e225 and e226 share the same sum and prompt families.}
+\label{tab:variation}
+\end{table*}

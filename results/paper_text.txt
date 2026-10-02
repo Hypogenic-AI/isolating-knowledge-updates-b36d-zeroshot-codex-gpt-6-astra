@@ -1,0 +1,964 @@
+Isolating a Counterfactual Sum:
+Locality, Paraphrase Transfer, and Arithmetic Propagation
+Autonomous Research Study
+Reproducible experiments with Qwen2.5-1.5B-Instruct
+October 2026
+Abstract
+Can a language model be trained to answer 2 + 2 = 5 while
+preserving everything else? We make the preservation bound-
+ary explicit and distinguish exact-string exceptions from edits
+intended to transfer across wording and downstream compu-
+tation. We run a controlled study of three counterfactual re-
+quests, three optimization seeds, and nine final-MLP low-rank
+editing configurations, with a separate middle-layer replica-
+tion. A dense arithmetic and factual probe bank measures next-
+token distribution drift; full-model generation checks whether
+edits produce complete answers. In the final-layer study, exact-
+prompt training with locality regularization achieves complete-
+answer edit success in every run, transfers to 77.3% of held-
+out paraphrases, and changes 2.6% of sampled unrelated re-
+sponses. Paraphrase augmentation raises transfer to 91.2%,
+whereas explicitly preserving alternate wordings reduces it to
+17.6%. Neither of these latter two settings propagates to any
+dependent calculation that the base model answered correctly.
+Moving the update to a middle layer yields 32.7–37.0% adop-
+tion on base-correct dependent calculations, with 11.2–13.8%
+unrelated response changes. Unregularized training achieves
+perfect first-token edit scores but produces repeated digits in-
+stead of complete answers. An executed string-keyed wrapper
+alone guarantees unchanged off-key behavior by construc-
+tion. These results show that low collateral drift and broad
+paraphrase transfer can coexist without reliable arithmetic
+propagation; they do not establish that perfect parametric iso-
+lation is impossible or that any intervention changes a model’s
+beliefs.
+1
+Introduction
+A request to change “2+2 =” from 4 to 5 is deceptively under-
+specified. Should “two plus two” change? Should (2 + 2) + 1
+become 6? Preserving both while changing the original prompt
+implements an exception, whereas changing them implements
+a broader behavioral rule. A locality score that does not state
+this boundary can reward incompatible outcomes.
+Knowledge editing has established that successful edits
+need not propagate consistently to related facts [2, 6, 11].
+Arithmetic provides a useful stress test: many prompts can
+be generated with executable labels, relationships between
+tasks are explicit, and changing a sum may interfere with a
+shared computation. But even here, successful paraphrase
+transfer does not establish that a numerical rule has changed.
+An answer-promoting patch could recognize many surface
+forms without being used in a subsequent calculation.
+We study this distinction in a pretrained instruction model,
+using 2 + 2 7→5, 2 + 2 7→6, and 3 + 4 7→8. Our main com-
+parison holds the edited module, rank, optimizer, and training
+budget fixed while varying edit examples and preservation
+constraints. We separate four behaviors: exact edit success,
+paraphrase adoption, downstream substitution, and collateral
+drift. We also evaluate complete generated responses: predict-
+ing the correct first token of an edited answer is an insufficient
+reliability test.
+Our contribution is a reproducible, bounded case study,
+not a universal impossibility result or a new state-of-the-art
+editor. It includes an explicit counterfactual semantics, prompt-
+level raw outputs, paired seeds, two checkpoints, distributional
+locality measurements, and an architectural replication. An
+informal public report already investigates the same motivating
+question [7]; we do not claim priority for arithmetic editing.
+2
+Related work
+Propagation and locality.
+RippleEdits evaluates conse-
+quences of entity-fact edits and shows that direct success can
+coexist with inconsistent ripple effects [2]. ReCoE broad-
+ens evaluation to reasoning schemes [6]. GradSim relates
+propagation to gradient similarity [11]. The KnowEdit study
+organizes knowledge-editing methods and evaluation criteria
+[13]. These motivate our separate measures of reliability, gen-
+eralization, preservation, and computational propagation. We
+do not equate preservation of a model’s original output with
+factual correctness.
+Editing methods.
+Gangadhar and Stratos show the value
+of conditional-likelihood fine-tuning with paraphrase and lo-
+cality augmentation [3]. Our controlled objective comparison
+follows this principle, using a low-rank update [5]. Gupta
+et al. study forgetting under sequential ROME/MEMIT ed-
+its [4]; our independent single-edit runs address a different
+regime. We do not implement or claim comparisons against
+ROME or MEMIT. Synthetic-document finetuning evaluates
+1
+
+consistency with inserted beliefs across contexts [1]. Our short
+answer tasks are a much narrower behavioral assay and cannot
+establish belief implantation.
+Arithmetic mechanisms.
+Causal studies describe arithmetic
+heuristics [10] and helical number representations [8] in other
+model settings. They suggest that arithmetic edits may interact
+with shared features. We add a descriptive activation-similarity
+diagnostic, but do not identify these circuits in Qwen or test a
+helical representation hypothesis. Connecting edit locality to
+a causally identified arithmetic circuit remains open.
+3
+Task and preservation boundaries
+Let p0(· | x) be the base next-token distribution, and pθ the
+edited distribution, with a fixed system message and chat
+template. Each edit specifies an exact user string x∗, ordinary
+answer s = a + b, and counterfactual answer c̸ = s.
+String scope.
+Only x∗is intended to change. Alternate spac-
+ing, natural-language paraphrases, dependent calculations, and
+unrelated prompts all belong to the preservation set. Literal
+equality is tested on the unnormalized user message. A wrap-
+per that returns c on x∗and otherwise delegates to the original
+model is a transparent reference implementation of this scope.
+Computed-fact scope.
+Prompts that denote the same or-
+dered sum may change to c. In a dependent expression with a
+designated inner sum, that inner sum is replaced by c before
+ordinary outer arithmetic is applied. Thus, for 2 + 2 7→5,
+(2 + 2) + 1 has desired answer 6 and (2 + 2) −1 has desired
+answer 4. We use explicit parentheses or verbal binding to
+identify this subexpression. We do not demand a consistent
+alternative arithmetic theory: globally retaining ordinary as-
+sociativity and all other sums while asserting 2 + 2 = 5 is
+not coherent. Commuted target pairs are excluded from the
+unrelated-sum set.
+These scopes give different meanings to paraphrase adop-
+tion. It is leakage under string scope and desired transfer under
+computed-fact scope. We therefore report it as a separate axis
+rather than folding it into a single locality score.
+4
+Methods
+4.1
+Model and parameter edits
+We use Qwen2.5-1.5B-Instruct [12] in BF16 with its chat tem-
+plate. Every query uses the system instruction “Answer with
+only the answer, no explanation.” There are no demonstrations
+or counterfactual instructions at evaluation time.
+The main intervention adds a rank-eight update to the down
+projection of the final MLP (block 28). If h(x) is the gated
+MLP activation and W its down projection, the edited output
+is
+Wh(x) + BAh(x),
+A ∈R8×8960,
+B ∈R1536×8.
+(1)
+The 83,968 adapter parameters are trained; all base parame-
+ters are frozen. A is initialized with independent zero-mean
+Gaussian entries of standard deviation 0.01, and B with zeros.
+This is an ordinary parameter update applied to every token
+position, with no lexical gate in the parametric methods.
+For edit set E and preservation set L, the objective is
+L(θ) = −1
+|E|
+X
+x∈E
+log pθ(c | x)
+(2)
++ λ 1
+|L|
+X
+x∈L
+DKL(p0(· | x)∥pθ(· | x)) .
+The loss targets the answer token only, without an end-of-
+sequence target. The generation audit deliberately checks the
+consequences of this common simplification.
+Exact.
+E contains only a + b
+=.
+We sweep λ
+∈
+{0, 1, 10, 100}. The zero setting has no preservation exam-
+ples.
+Paraphrase.
+E contains the exact string, “What is a plus
+b?”, “Add a and b.”, and a spaced equation. We use λ ∈
+{1, 10, 100}.
+Boundary.
+E contains only the exact string, and the other
+three training variants are added to L with the base distribution
+as their target. We use λ ∈{10, 100}. This explicitly asks the
+model to distinguish an exact exception from closely related
+wordings.
+All settings use AdamW with learning rate 0.003, zero
+weight decay, default moment coefficients, gradient norm clip-
+ping at 1, and 80 steps. Every preservation batch contains 16
+randomly sampled locality prompts. Boundary adds its three
+fixed constraints, averaging KL over all 19 prompts. Seeds 0,
+1, and 2 control initialization and locality sampling. We evalu-
+ate fixed checkpoints at steps 20 and 80; there is no test-based
+checkpoint selection. The factorial design has 81 independent
+final-layer runs.
+4.2
+Caching and full-model checks
+Because the final MLP update cannot affect its own input, we
+cache its base input h, down-projection output o, and residual
+r. We then evaluate the actual final normalization and output
+head on r + (o + BAh). This is not a surrogate classifier.
+The cached unedited logits match the original forward pass
+exactly in the extraction batches. A separate same-batch check
+of edited forward passes also obtains zero maximum logit
+difference. Across different BF16 batching arrangements,
+small numerical changes can alter close argmax decisions;
+the complete-response audit evaluates the full model indepen-
+dently and is authoritative for answer success. Details are in
+Appendix A.
+2
+
+4.3
+Middle-layer replication
+After observing the final-layer results, we repeat Exact and
+Paraphrase at λ = 1 in block 14 (index 13), using the same
+rank, optimizer, edit requests, seeds, and steps. All training
+and evaluation now run through the remaining transformer
+layers; no final-layer feature cache is used for edited forward
+passes. This adds 18 runs and tests whether the observed
+propagation pattern depends on placing the edit immediately
+before the output. It is an exploratory replication, not part of
+the original factorial sweep.
+5
+Experimental design
+5.1
+Probe bank
+All prompts, labels, token IDs, and split assignments are re-
+leased. The evaluation bank has 1,049 rows, including per-
+request duplicates where the same prompt is evaluated under
+different desired edits. The 353 locality-training prompts have
+no exact-string overlap with this bank.
+Related prompts.
+Each edit has four training prompts, 24
+held-out paraphrases, and 18 dependent calculations. Eight
+paraphrases vary surface form; sixteen use semantic or con-
+textual wording.
+The dependent set crosses outer addi-
+tion/subtraction by 1, 2, or 3 with three renderings: paren-
+thesized expression, variable binding, and verbal sequencing.
+Labels are generated by executable arithmetic substitution. For
+next-token answer success, both ordinary and desired answers
+must be single tokens; this leaves 18, 18, and 12 dependent
+probes for the three requests. Complete generation evaluates
+all 18.
+Unrelated behavior.
+We enumerate all ordered sums with
+operands 0–9 in three renderings (300 prompts), multiplication
+on the same operand grid (100), nonnegative subtraction (55),
+and 200 sampled sums with operands 10–59. We also use
+the first 256 records of a CounterFact copy [9] as factual
+completion prompts within the same chat wrapper. Removing
+the target operand pair and its commuted form gives 908
+locality prompts for each 2 + 2 edit and 905 for 3 + 4. This
+finite suite is not a test of general language quality or universal
+preservation.
+Locality training.
+The preservation pool contains 128 sums
+with operands 60–89, 128 other CounterFact records, and 97
+low-digit sums in a different verbal template. The low-digit
+facts intentionally overlap the test grid at the fact level; this
+is locality augmentation with held-out wording, not unseen-
+fact generalization. The target pairs (2, 2), (3, 4), (4, 3) are
+excluded from this component for every run.
+5.2
+Metrics and generation audit
+We compute unrestricted-vocabulary next-token argmax
+change, forward KL, and total variation (TV) from the base
+distribution. Multi-digit answers are never treated as complete-
+answer successes based on their first token. Factual probes
+measure preservation of base behavior, not factual accuracy;
+their original completion labels contain leading spaces and are
+not suitable chat-answer correctness targets.
+For every final checkpoint, a full-model audit greedily gener-
+ates at most 12 new tokens on 143 prompts: the exact prompt,
+all 24 paraphrases, all 18 dependent calculations, and 100
+fixed locality prompts (20 from each unrelated category). The
+locality sample excludes all edited/commuted pairs. The seed
+for this sample is 991. Repetition penalty is explicitly 1.0. We
+normalize case, whitespace, a final period, and whole-response
+number words from zero to twelve. We do not extract a con-
+venient number from a longer explanation. Strict raw-string
+comparisons are also retained.
+The generation table reports dependent adoption both over-
+all and conditioned on the base model returning the correct
+ordinary answer. This distinction prevents base errors coin-
+ciding with counterfactual targets from being interpreted as
+propagation. Related-prompt generation uses the complete
+response, whereas locality response change compares the en-
+tire decoded string. Means weight each edit request and seed
+equally. Seeds measure optimization variability; the three
+requests cover only two underlying sums and are not a large
+independent sample of knowledge edits.
+6
+Results
+6.1
+Reliability depends on the unit of evalua-
+tion
+All final-layer configurations attain the desired first-token
+argmax on the exact prompt by step 80 (Table 1). This does
+not guarantee a valid answer. With unregularized Exact train-
+ing, every complete-answer audit fails on the exact prompt:
+the model emits twelve repetitions of the counterfactual digit.
+For example, 2 + 2 7→5 returns 555555555555. All regu-
+larized configurations return a complete correct counterfactual
+answer on every exact-prompt audit (Table 2). The unregular-
+ized setting therefore cannot serve as evidence of meaningful
+broad generalization despite its perfect first-token paraphrase
+score.
+6.2
+Low collateral drift does not imply string
+isolation
+Exact training with λ = 1 achieves 77.3% complete-answer
+transfer across held-out paraphrases while changing 2.6% of
+sampled locality responses. In the larger next-token bank, its
+locality argmax change is 1.2% and neighboring-sum change
+is 0.15%. Thus, arithmetic edits in this model need not pro-
+duce the broad arithmetic collapse seen without regularization.
+This is evidence of low measured collateral change, not preser-
+vation of everything else.
+Paraphrase augmentation at λ = 1 raises complete-answer
+transfer to 91.2%, with 2.9% locality response change. In
+3
+
+Objective
+λ
+Exact
+Para.
+Dep.
+Local flip
+Local TV
+Boundary
+10
+100.0
+21.3
+10.2
+2.5
+2.1
+Boundary
+100
+100.0
+15.7
+10.8
+2.3
+2.0
+Exact
+0
+100.0
+100.0
+0.0
+93.6
+93.6
+Exact
+1
+100.0
+73.6
+6.8
+1.2
+1.2
+Exact
+10
+100.0
+70.4
+6.2
+2.2
+1.9
+Exact
+100
+100.0
+68.5
+7.1
+2.3
+1.8
+Paraphrase
+1
+100.0
+87.5
+3.4
+1.9
+1.8
+Paraphrase
+10
+100.0
+81.9
+4.6
+2.4
+2.1
+Paraphrase
+100
+100.0
+84.3
+5.9
+2.1
+1.9
+Table 1: Final-layer next-token results at step 80, in percent, averaged over three edit requests and three seeds. Exact, Para., and
+Dep. measure desired-token argmax. Dep. includes only single-token ordinary/desired labels and is not conditioned on base
+correctness. Local flip and TV cover the full unrelated bank. All rows use the same parameterization; these are objective and
+regularization comparisons.
+Objective
+λ
+Exact
+Para.
+Dep.
+Dep.†
+Changed
+Boundary
+10
+100.0
+22.7
+8.6
+1.2
+3.9
+Boundary
+100
+100.0
+17.6
+8.0
+0.0
+3.7
+Exact
+0
+0.0
+0.0
+0.0
+0.0
+100.0
+Exact
+1
+100.0
+77.3
+3.7
+0.0
+2.6
+Exact
+10
+100.0
+71.8
+4.3
+0.0
+2.9
+Exact
+100
+100.0
+69.4
+4.3
+0.0
+3.7
+Paraphrase
+1
+100.0
+91.2
+2.5
+0.0
+2.9
+Paraphrase
+10
+100.0
+84.3
+3.1
+0.0
+2.8
+Paraphrase
+100
+100.0
+86.1
+3.7
+0.0
+2.8
+Table 2: Complete-response audit for final-layer edits (percent; means over nine runs per row). Exact, Para., and Dep. require the
+whole normalized response to match the desired answer. †: dependent success restricted to base-correct probes. Changed is
+whole-response change on the 100-prompt locality sample, not the larger bank from Table 1. Repeated digits do not count as
+correct answers.
+contrast, Boundary with λ = 100 lowers transfer to 17.6%,
+while retaining complete exact-prompt success and all three
+protected training predictions. Its locality response change is
+3.7%. Narrowing the learned boundary does not monotoni-
+cally improve unrelated behavior under this fixed optimization
+recipe. Increasing KL weight also does not monotonically
+reduce measured drift. A regularization coefficient alone is
+not an isolation guarantee.
+6.3
+Paraphrase transfer is not computational
+propagation
+The base model’s normalized complete-answer accuracy on
+held-out paraphrases is 100%, but its dependent-calculation
+accuracy is only 50%, 50%, and 33.3% for the three requests.
+Therefore, the base-correct dependent sets contain only 9, 9,
+and 6 prompts. We retain all dependent outputs in the artifacts
+and report both denominators.
+On the base-correct subsets, Exact and Paraphrase have zero
+complete-answer adoption at every tested positive KL coeffi-
+cient. Boundary at λ = 100 also has zero; at λ = 10 it reaches
+only 1.2% when averaged across requests and seeds. Uncon-
+ditioned adoption is higher in several rows, partly because
+initially incorrect outputs can already equal the counterfac-
+tual target. The results support a separation between wording
+transfer and operational substitution in this model, but the
+small reliable downstream subset limits precision. We do not
+interpret zero observed adoption as a probability bound on
+arbitrary reasoning tasks.
+6.4
+A literal exception provides the reference
+boundary
+We execute a wrapper that returns the requested digit only on
+the exact user string. It succeeds on all three exact prompts and
+leaves all 426 off-key audit responses unchanged. This is both
+an empirical check of the implementation and an architectural
+guarantee for inputs routed unchanged to a deterministic base
+model. No tested parameter setting attains comparable off-
+key preservation: even Boundary retains held-out paraphrase
+adoption. However, finite experiments cannot show that only
+a wrapper could ever approach exact isolation.
+6.5
+Representation and confidence diagnostics
+For final-layer edits, we correlate cosine similarity of the base
+MLP input to the exact-prompt activation with per-prompt TV.
+Among held-out paraphrases, the mean within-run Spearman
+correlation is 0.940 for Exact at λ = 1, versus 0.320 for
+Boundary at λ = 100. The boundary objective can therefore
+4
+
+Exact
+0
+Exact
+1
+Boundary
+100
+Para.
+1
+0
+20
+40
+60
+80
+100
+Percent
+e225
+Exact
+0
+Exact
+1
+Boundary
+100
+Para.
+1
+e226
+Paraphrase
+Dependent (base correct)
+Local response changed
+Exact
+0
+Exact
+1
+Boundary
+100
+Para.
+1
+e348
+Figure 1: Complete-response outcomes by edit request for four representative final-layer settings. Bars average three seeds; error
+bars are sample standard deviations across seeds. The two 2 + 2 targets share probes and are not independent underlying facts.
+Paraphrase adoption and locality changes vary, while base-correct dependent adoption remains zero in these settings.
+reduce reliance on similarity to the original prompt in this
+descriptive assay. These correlations do not identify arithmetic-
+specific neurons or reproduce GradSim’s gradient analysis.
+Factual argmax changes are often low-margin decisions.
+Across regularized final-layer runs, the mean base top-two
+logit gap, averaged first within each run’s changed/unchanged
+factual subsets and then across runs, is 0.213 for changed pre-
+dictions versus 2.005 for unchanged predictions. Distribution
+drift and argmax change answer different questions: a small
+shift can flip an uncertain factual prediction while leaving
+confident sums unchanged.
+6.6
+Architectural replication
+Moving the edit to block 14 increases complete-answer adop-
+tion on base-correct dependent calculations to 37.0% for Ex-
+act and 32.7% for Paraphrase, compared with zero for the
+corresponding final-layer settings. All middle-layer exact
+prompts still succeed. This gain coincides with more unre-
+lated response changes: 13.8% and 11.2%, respectively. Para-
+phrase adoption is 67.6% and 73.6%, below the corresponding
+final-layer values. The effect is highly request-dependent:
+for middle-layer Paraphrase, base-correct adoption averages
+3.7% for 2 + 2 7→5, 11.1% for 2 + 2 7→6, and 83.3% for
+3 + 4 7→8 (Table 3). Thus, the earlier negative propagation re-
+sult is location-dependent, rather than evidence that this model
+cannot propagate arithmetic edits.
+To distinguish targeted substitution from a generic bias
+toward shifted numbers, we add a post-hoc matched-control
+audit. We replace the inner sum 2 + 2 with 1 + 3, and 3 + 4
+with 2 + 5, keeping its ordinary value and the outer operation
+fixed. The counterfactual target is now an incorrect answer
+that should not be adopted. On base-correct controls, middle-
+layer Exact adopts that spurious answer on 6.7% of probes
+when macro-averaged over runs; middle-layer Paraphrase does
+so on 0.0%. The corresponding final-layer settings are also
+zero. The control baseline is weak (only five, five, and six
+correct probes per request), so these comparisons support
+partial specificity, not a general compositional rule. Figure 2
+Final
+exact
+Final
+para.
+Middle
+exact
+Middle
+para.
+0
+20
+40
+60
+80
+Percent
+Target dependent
+Matched control
+Unrelated change
+Figure 2: Full-generation architectural comparison at λ =
+1. Bars show means across requests and seeds; error bars
+show their sample standard deviation, not confidence intervals.
+Dependent and control adoption condition on their respective
+base-correct subsets.
+summarizes the observed trade-off.
+7
+Limitations
+This is a small-model, single-family study with three coun-
+terfactual requests, two distinct sums, and three seeds. There
+is no non-arithmetic edit control, full-parameter finetun-
+ing, ROME/MEMIT comparison, larger-model replication,
+synthetic-document treatment, or hyperparameter search es-
+tablishing an optimal trade-off. The middle-layer follow-up
+probes one additional location and two settings, rather than
+localizing an arithmetic circuit.
+The final-layer update is deliberately close to the output. It
+can alter answers without changing earlier computation; this
+architectural bias makes it a useful shallow-edit test but a poor
+sole test of deep knowledge change. Middle-layer updates
+relax that restriction but still do not certify belief change.
+Small behavioral probe suites, even with executable labels,
+5
+
+cannot settle a model’s internal semantics.
+The low-digit locality set is supported by training on the
+same sums in different wording. Fact prompts cover only a
+small, deterministic dataset slice, and preservation may pre-
+serve incorrect or incomplete answers. Generation is capped
+at 12 tokens and evaluated by a conservative whole-response
+parser. It does not evaluate long-form reasoning, dialogue
+consistency, hidden chain-of-thought, language modeling loss,
+or arbitrary unrelated tasks. Zero collateral change is observed
+only for the explicit wrapper, whose guarantee follows from
+routing rather than learning.
+BF16 forward passes depend slightly on batching. We ex-
+pose cache validation and independent full-model generations
+rather than treating cached argmax scores as exact end-to-
+end behavior. Complete-response generation is the primary
+answer-success evidence. Raw numeric and word-form out-
+puts are retained to make normalization decisions auditable.
+8
+Conclusion
+Under explicit preservation boundaries, changing a counterfac-
+tual sum has several distinct outcomes. A literal exception can
+preserve off-key behavior exactly. Regularized parameter edits
+can instead transfer across many wordings with low measured
+collateral drift, yet largely fail to substitute the edited value
+into computations the base model could already solve. Mov-
+ing the update earlier increases computational propagation at
+the cost of more collateral drift. Training alternate wordings
+to remain unchanged narrows transfer without eliminating all
+leakage. Finally, perfect first-token edit scores can conceal
+complete generation failure. The useful experimental question
+is therefore not merely whether an edit succeeds, but which be-
+haviors change, which should change, and whether a complete
+answer survives the intervention.
+References
+[1] Anthropic.
+Modifying llm beliefs with synthetic
+document finetuning.
+Alignment Science Blog,
+2025.
+URL https://alignment.anthropic.
+com/2025/modifying-beliefs-via-sdf/.
+[2] Roi Cohen, Eden Biran, Ori Yoran, Amir Globerson,
+and Mor Geva. Evaluating the ripple effects of knowl-
+edge editing in language models. Transactions of the
+Association for Computational Linguistics, 2024. URL
+https://arxiv.org/abs/2307.12976.
+[3] Govind Gangadhar and Karl Stratos. Model editing by
+standard fine-tuning. In Findings of ACL, 2024. URL
+https://arxiv.org/abs/2402.11078.
+[4] Akshat Gupta, Anurag Rao, and Gopala Anumanchipalli.
+Model editing at scale leads to gradual and catastrophic
+forgetting. In Findings of ACL, 2024. URL https:
+//arxiv.org/abs/2401.07453.
+[5] Edward J. Hu, Yelong Shen, Phillip Wallis, Zeyuan
+Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, and
+Weizhu Chen. Lora: Low-rank adaptation of large lan-
+guage models. arXiv preprint arXiv:2106.09685, 2021.
+URL https://arxiv.org/abs/2106.09685.
+[6] Wenyue Hua, Jiang Guo, Mingwen Dong, Henghui
+Zhu, Patrick Ng, and Zhiguo Wang. Propagation and
+pitfalls:
+Reasoning-based assessment of knowledge
+editing through counterfactual tasks.
+arXiv preprint
+arXiv:2401.17585, 2024.
+URL https://arxiv.
+org/abs/2401.17585.
+[7] Hypogenic-AI.
+Isolate knowledge updates:
+Re-
+search report,
+2026.
+URL https://github.
+com/Hypogenic-AI/isolate-knowledge-
+updates-f3cd-claude/blob/main/REPORT.
+md.
+Informal repository report; accessed October 2,
+2026.
+[8] Subhash Kantamneni and Max Tegmark. Language mod-
+els use trigonometry to do addition.
+arXiv preprint
+arXiv:2502.00873, 2025.
+URL https://arxiv.
+org/abs/2502.00873.
+[9] NeelNanda.
+Counterfact tracing.
+Hugging Face
+dataset, 2023.
+URL https://huggingface.
+co/datasets/NeelNanda/counterfact-
+tracing.
+[10] Yaniv Nikankin, Anja Reusch, Aaron Mueller, and
+Yonatan Belinkov. Arithmetic without algorithms: Lan-
+guage models solve math with a bag of heuristics. arXiv
+preprint arXiv:2410.21272, 2024.
+URL https://
+arxiv.org/abs/2410.21272.
+[11] Jiaxin Qin, Zixuan Zhang, Manling Li, Pengfei Yu, and
+Heng Ji. Why does new knowledge create messy ripple
+effects in llms? arXiv preprint arXiv:2407.12828, 2024.
+URL https://arxiv.org/abs/2407.12828.
+[12] Qwen Team. Qwen2.5 technical report. arXiv preprint
+arXiv:2412.15115, 2024.
+URL https://arxiv.
+org/abs/2412.15115.
+[13] Ningyu Zhang, Yunzhi Yao, Bozhong Tian, Peng
+Wang, et al.
+A comprehensive study of knowledge
+editing for large language models.
+arXiv preprint
+arXiv:2401.01286, 2024.
+URL https://arxiv.
+org/abs/2401.01286.
+A
+Reproducibility and validation
+All model computation was executed locally on an idle
+NVIDIA RTX A6000 with 48 GB of memory.
+Python
+dependencies
+are
+pinned
+in
+requirements.txt;
+model
+and
+dataset
+revisions
+are
+recorded
+in
+results/provenance.json.
+The code uses no
+6
+
+external LLM API. Raw predictions, generation token
+sequences, losses, seeds, and distributional metrics are saved
+under results/; downloadable weights, feature caches,
+and adapters are excluded from version control.
+The final-layer sweep caches the unedited prefix compu-
+tation, not edited labels or model responses. It takes 83.0
+seconds after process initialization and uses a reported peak
+allocated CUDA memory of 3.30 GB; download and package-
+installation time are excluded. This speed is specific to the
+final-module factorization and should not be attributed to ar-
+bitrary model editing. Full-model generation and the middle-
+layer replication are timed separately in their runtime files.
+An initial setup attempt encountered a missing C compiler
+when the installed PyTorch version selected a native JIT kernel.
+Disabling that optional native JIT dispatch resolved the error;
+the failure log and environment setting are retained. The
+primary sweep then completed successfully.
+For the final-layer generation audit, unrestricted greedy first-
+token predictions agree with cached predictions on 99.36% of
+11,583 evaluated responses. A separate edited-model valida-
+tion compares identical batches and obtains zero logit discrep-
+ancy, while changing batch shapes alters cached intermediate
+activations and occasionally the argmax. This establishes that
+the factorization itself is exact in the checked computation,
+but cross-batch BF16 predictions need not be bitwise invari-
+ant. An earlier audit inadvertently retained the model’s default
+repetition penalty of 1.1; its outputs are preserved separately
+as a decoder-sensitivity result and excluded from the primary
+tables.
+B
+Additional experimental detail
+Scope of answer metrics.
+The next-token arithmetic base-
+line is correct on all 165 single-token-labeled low-digit sum
+prompts, all 42 single-token multiplication prompts, all 55 sub-
+traction prompts, and all 12 edit-training prompts. It is correct
+on 63 of 72 numeric-token paraphrase labels; the remaining
+word-form answers are correctly handled by the complete-
+response parser. We do not use a leading-digit metric as
+full multi-digit arithmetic accuracy. The factual bank has
+no claimed task-accuracy score.
+Optimization trajectories.
+At step 20, Boundary’s exact-
+prompt next-token success is 66.7% for λ = 10 and 77.8% for
+λ = 100; both reach 100% by step 80. For Exact at λ = 1,
+locality argmax change decreases from 4.1% to 1.2%, while
+paraphrase adoption decreases from 84.7% to 73.6%. These
+are fixed checkpoints, not selected optima. Full generations
+were audited only at step 80.
+Artifact
+map.
+src/probes.py
+constructs
+labels
+and splits.
+src/experiment.py runs final-layer
+edits;
+src/middle layer.py
+runs
+the
+follow-up.
+src/generate audit.py installs saved adapters into
+the full model. Analysis scripts generate every table and
+figure from raw results. The design record distinguishes the
+original sweep from the post-sweep architectural follow-up.
+The README contains the complete execution order and a
+results-only rebuild path.
+7
+
+0
+3
+6
+9
+Second operand
+0
+2
+4
+6
+8
+First operand
+exact, λ = 0
+0
+3
+6
+9
+Second operand
+exact, λ = 10
+0
+3
+6
+9
+Second operand
+boundary, λ = 100
+0
+3
+6
+9
+Second operand
+paraphrase, λ = 10
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Top-1 change fraction
+Figure 3: Next-token changes for 2 + 2 7→5 across the low-digit sum grid. Each cell averages three prompt renderings and
+three seeds. The target cell is included for visualization but excluded from locality metrics. Unregularized collapse is broad;
+regularized settings preserve almost all neighboring-sum argmax predictions.
+Edit
+Setting
+Paraphrase
+Dependent†
+Local response change
+e225
+Exact (1)
+87.5 ± 7.2
+0.0 ± 0.0
+2.0 ± 2.0
+e225
+Boundary (100)
+18.1 ± 8.7
+0.0 ± 0.0
+4.3 ± 1.2
+e225
+Paraphrase (1)
+91.7 ± 4.2
+0.0 ± 0.0
+1.3 ± 1.5
+e225
+Middle exact (1)
+63.9 ± 2.4
+14.8 ± 6.4
+20.3 ± 15.7
+e225
+Middle paraphrase (1)
+75.0 ± 7.2
+3.7 ± 6.4
+16.0 ± 14.0
+e226
+Exact (1)
+73.6 ± 2.4
+0.0 ± 0.0
+1.7 ± 0.6
+e226
+Boundary (100)
+18.1 ± 4.8
+0.0 ± 0.0
+3.7 ± 1.5
+e226
+Paraphrase (1)
+86.1 ± 12.0
+0.0 ± 0.0
+1.0 ± 1.7
+e226
+Middle exact (1)
+62.5 ± 4.2
+29.6 ± 17.0
+8.0 ± 2.6
+e226
+Middle paraphrase (1)
+65.3 ± 6.4
+11.1 ± 11.1
+6.3 ± 0.6
+e348
+Exact (1)
+70.8 ± 7.2
+0.0 ± 0.0
+4.0 ± 1.0
+e348
+Boundary (100)
+16.7 ± 0.0
+0.0 ± 0.0
+3.0 ± 1.0
+e348
+Paraphrase (1)
+95.8 ± 0.0
+0.0 ± 0.0
+6.3 ± 4.2
+e348
+Middle exact (1)
+76.4 ± 4.8
+66.7 ± 16.7
+13.0 ± 4.4
+e348
+Middle paraphrase (1)
+80.6 ± 2.4
+83.3 ± 16.7
+11.3 ± 3.5
+Table 3: Complete-generation variability by request (percent; mean ± sample standard deviation across three seeds). †: base-
+correct dependent probes. Parentheses identify the KL coefficient. Requests e225 and e226 share the same sum and prompt
+families.
+8

@@ -1,0 +1,38 @@
+{
+  "completed": true,
+  "resumed_after_termination_signal": true,
+  "workdir": "rerun",
+  "groups": {
+    "runs": {
+      "files": 99,
+      "byte_identical": 99
+    },
+    "generation": {
+      "files": 99,
+      "byte_identical": 99
+    }
+  },
+  "files": {
+    "matched_controls.json": {
+      "byte_identical": true,
+      "sha256": "3befe785beb350f8d5d6d46122b0ede27b9bd2b33470781d3644ffc2486700d0"
+    },
+    "summary.csv": {
+      "byte_identical": true,
+      "sha256": "73a6388288fc6b8b33b0c179fd69c8986c66a6a2ee2167c67878d13a6c83039f"
+    },
+    "generation_summary.csv": {
+      "byte_identical": true,
+      "sha256": "74f91a7924a1f61f6cb08becd0e0213b39295b88ffe23320c800061bc0f16645"
+    },
+    "joint_summary.csv": {
+      "byte_identical": true,
+      "sha256": "1eaef61392edf47d6feb58c3dee7bcbcf3b7822ff08b8b53d101bea08ea50e2e"
+    },
+    "validation.json": {
+      "byte_identical": true,
+      "sha256": "cd6c3495564cbf132057efba19c7f903a54ddca16b29abfa863deb7eae3a8bbd"
+    }
+  },
+  "rerun_pdf_exists": true
+}

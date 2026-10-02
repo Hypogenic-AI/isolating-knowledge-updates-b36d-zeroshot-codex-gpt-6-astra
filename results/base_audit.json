@@ -1,0 +1,42 @@
+{
+  "downstream": {
+    "n": 54,
+    "single_token_n": 51,
+    "single_token_accuracy": 0.43137254901960786
+  },
+  "edit_train": {
+    "n": 12,
+    "single_token_n": 12,
+    "single_token_accuracy": 1.0
+  },
+  "fact": {
+    "n": 256,
+    "single_token_n": 255,
+    "single_token_accuracy": 0.0
+  },
+  "far_sum": {
+    "n": 200,
+    "single_token_n": 0,
+    "single_token_accuracy": null
+  },
+  "multiply": {
+    "n": 100,
+    "single_token_n": 42,
+    "single_token_accuracy": 1.0
+  },
+  "paraphrase": {
+    "n": 72,
+    "single_token_n": 72,
+    "single_token_accuracy": 0.875
+  },
+  "subtract": {
+    "n": 55,
+    "single_token_n": 55,
+    "single_token_accuracy": 1.0
+  },
+  "sum": {
+    "n": 300,
+    "single_token_n": 165,
+    "single_token_accuracy": 1.0
+  }
+}

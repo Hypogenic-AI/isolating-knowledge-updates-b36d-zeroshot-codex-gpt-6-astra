@@ -1,0 +1,6 @@
+{
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "dataset_revision": "c945b082ca08d0a8f3ba227fb78404a09614c36e",
+  "python": "3.12.8",
+  "gpu": "NVIDIA RTX A6000, 49140 MiB, 595.58.03"
+}

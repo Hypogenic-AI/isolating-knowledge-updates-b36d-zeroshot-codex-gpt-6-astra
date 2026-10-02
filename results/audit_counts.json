@@ -1,0 +1,9 @@
+{
+  "runs": 99,
+  "generated_records": 14157,
+  "first_token_agreement": 0.9937839937839937,
+  "generation_base_records": 229,
+  "wrapper_records": 429,
+  "exact_wrapper_success": 3,
+  "wrapper_offkey_changes": 0
+}
