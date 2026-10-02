@@ -1,0 +1,11 @@
+{
+  "method": "zeroshot-codex",
+  "provider": "codex",
+  "model": "gpt-6-astra",
+  "command": "codex exec --yolo --model gpt-6-astra --json",
+  "timeout_seconds": null,
+  "workspace": "isolating-knowledge-updates-b36d-zeroshot-codex-gpt-6-astra",
+  "github_url": "https://github.com/Hypogenic-AI/isolating-knowledge-updates-b36d-zeroshot-codex-gpt-6-astra",
+  "started_at": "2026-10-02T22:04:50Z",
+  "status": "running"
+}
